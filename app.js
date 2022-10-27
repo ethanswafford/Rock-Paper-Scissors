@@ -41,4 +41,7 @@ function getResults() {
     if (cpuChoice === ' PAPER' && userChoice === ' SCISSORS') {
         result = "SNIP AND CLIP, SCISSORS CUT PAPER, YOU WIN!"
     }
+    if (cpuChoice === ' PAPER' && userChoice === ' ROCK') {
+        result = "COVERED AND SMOTHERED, PAPER BEATS ROCK, YOU LOSE!"
+    }
 }
