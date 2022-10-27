@@ -38,4 +38,7 @@ function getResults() {
     if (cpuChoice === ' ROCK' && userChoice === ' SCISSORS') {
         result = "BASHED AND SMASHED, ROCK CRUSHES SCISSORS, YOU LOSE!"
     }
+    if (cpuChoice === ' PAPER' && userChoice === ' SCISSORS') {
+        result = "SNIP AND CLIP, SCISSORS CUT PAPER, YOU WIN!"
+    }
 }
