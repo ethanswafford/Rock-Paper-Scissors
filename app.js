@@ -11,6 +11,7 @@ gameChoices.forEach(button => button.addEventListener('click', (e) => {
     userChoice = e.target.id
     playSel.innerHTML = userChoice
     cpuGenChoice()
+    getResults()
 }))
 
 function cpuGenChoice() {
@@ -44,4 +45,11 @@ function getResults() {
     if (cpuChoice === ' PAPER' && userChoice === ' ROCK') {
         result = "COVERED AND SMOTHERED, PAPER BEATS ROCK, YOU LOSE!"
     }
+    if (cpuChoice === ' SCISSORS' && userChoice === ' ROCK') {
+        result = "BASHED AND SMASHED, ROCK CRUSHES SCISSORS, YOU WIN!"
+    }
+    if (cpuChoice === ' SCISSORS' && userChoice === ' PAPER') {
+        result = "SNIP AND CLIP, SCISSORS CUT PAPER, YOU LOSE!"
+    }
+    gameResult.innerHTML = result;
 }
